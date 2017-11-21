@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+set(OpenCV_DIR "/home/zjq/install/share/OpenCV/")
+project(${PRG_NAME})
+find_package( OpenCV REQUIRED )
+add_executable( ${PRG_NAME} ../${PRG_NAME}.cpp )
+target_link_libraries( ${PRG_NAME} ${OpenCV_LIBS} )
